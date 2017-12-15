@@ -7,5 +7,18 @@
   <body>
     <h1>こんにちは</h1>
     <h1 class='animation'>世界</h1>
+
+    <button id='rotate-button'>回る</button>
+
+    <script type='text/javascript'>
+      var button = document.getElementById('rotate-button');
+      var targetTags = document.querySelectorAll('.animation');
+
+      button.addEventListener('click', function() {
+        targetTags.forEach(function(tag) {
+          tag.classList.toggle('moving');
+        });
+      });
+    </script>
   </body>
 </html>

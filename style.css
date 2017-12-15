@@ -1,6 +1,9 @@
 .animation {
   color: red;
-  animation: my-motion 5s ease 2s infinite;
+}
+
+.moving {
+  animation: my-motion 3s linear 0s infinite;
 }
 
 @keyframes my-motion {
